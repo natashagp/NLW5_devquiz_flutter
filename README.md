@@ -1,16 +1,41 @@
-# devquiz
+<p align="center">
+  <img alt="DevQuiz logo" src="/assets/images/logo.png" >
+</p>
 
-A new Flutter project.
+<p align="center">
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-## Getting Started
+## 🧪 Technologies
 
-This project is a starting point for a Flutter application.
+This project was developed using the following technologies:
 
-A few resources to get you started if this is your first Flutter project:
+- [Dart](https://dart.dev)
+- [Flutter](https://flutter.dev)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 💻 Project
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A mobile application built with Flutter with the goal of being a quiz about Flutter knowledge.
+
+This project was build during  **[Next Level Week](https://nextlevelweek.com/)**, an event from Rockeatseat - https://app.rocketseat.com.br/, during April 19-25, 2021.
+
+## 🔖 Layout
+
+### Screenshots
+
+<p>
+  <img src="/demo/print1.png" width="200" height="400"/> <img src="/demo/print2.png" width="200" height="400"/> <img src="/demo/print3.png" width="200" height="400"/>
+</p>
+<p>
+ <img src="/demo/print4.png" width="200" height="400"/> <img src="/demo/print5.png" width="200" height="400"/> <img src="/demo/print6.png" width="200" height="400"/>
+</p>
+
+### Demo
+
+<img src="/demo/demo.gif" width="200" height="400"/>
+
+### Figma
+
+[Figma](https://www.figma.com/file/fMqKhwT9L5D3MVe4btRtG5/DevQuiz)
