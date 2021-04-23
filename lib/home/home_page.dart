@@ -1,5 +1,4 @@
 import 'package:devquiz/challenge/challenge_page.dart';
-import 'package:devquiz/challenge/widgets/quiz/quiz_widget.dart';
 import 'package:devquiz/core/core.dart';
 import 'package:devquiz/home/home_controller.dart';
 import 'package:devquiz/home/widgets/app_bar/app_bar_widget.dart';
@@ -53,27 +52,30 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 24.0),
               Expanded(
                 child: GridView.count(
-                    crossAxisSpacing: 16,
-                    mainAxisSpacing: 16,
-                    crossAxisCount: 2,
-                    children: controller.quizzes!
-                        .map((e) => QuizCardWidget(
-                              title: e.title,
-                              percent: e.questionAnswered / e.questions.length,
-                              completed:
-                                  '${e.questionAnswered}/${e.questions.length}',
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => ChallengePage(
-                                      questions: e.questions,
-                                    ),
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
+                  crossAxisCount: 2,
+                  children: controller.quizzes!
+                      .map((e) => QuizCardWidget(
+                            title: e.title,
+                            image: 'assets/images/${e.imagem}.png',
+                            percent: e.questionAnswered / e.questions.length,
+                            completed:
+                                '${e.questionAnswered}/${e.questions.length}',
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ChallengePage(
+                                    questions: e.questions,
+                                    title: e.title,
                                   ),
-                                );
-                              },
-                            ))
-                        .toList()),
+                                ),
+                              );
+                            },
+                          ))
+                      .toList(),
+                ),
               ),
             ],
           ),
